@@ -1,0 +1,177 @@
+.card {
+  grid-column: auto;
+  display: flex;
+  flex-direction: column;
+  color: var(--blue-100);
+  max-width: 200px;
+  border-radius: 10px 10px 20px 20px;
+
+  @media (max-width: 785px) {
+    & {
+      max-width: 100%;
+    }
+  }
+
+  &:first-of-type {
+    background-color: var(--blue-800);
+
+    .range {
+      transition: color 0.3s;
+    }
+
+    .range:hover,
+    .range.active {
+      cursor: pointer;
+      color: var(--white);
+    }
+  }
+
+  &:not(:first-of-type):hover > &__content {
+    background-color: var(--blue-700);
+  }
+
+  &__tag {
+    display: flex;
+    justify-content: end;
+    height: 40px;
+    padding-right: 5px;
+    overflow: hidden;
+
+    img {
+      transform: translateY(-5px);
+      height: 135%;
+    }
+  }
+
+  // Set background colors for each card
+  &:nth-of-type(2) {
+    background-color: var(--peach);
+  }
+
+  &:nth-of-type(3) {
+    background-color: var(--blue-300);
+  }
+
+  &:nth-of-type(4) {
+    background-color: var(--salmon);
+  }
+
+  &:nth-of-type(5) {
+    background-color: var(--green);
+  }
+
+  &:nth-of-type(6) {
+    background-color: var(--purple);
+  }
+
+  &:nth-of-type(7) {
+    background-color: var(--yellow);
+  }
+
+  &__content {
+    padding: 1.5rem;
+    border-radius: 10px 10px 10px 10px;
+    background-color: var(--blue-800);
+    transition: background-color 0.3s;
+
+    &--heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: var(--white);
+      margin-bottom: 1.5rem;
+      cursor: pointer;
+    }
+
+    h1 {
+      color: var(--white);
+      font-size: 2.5rem;
+      font-weight: 300;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 14px;
+    }
+
+    &:last-child {
+      flex: 2;
+    }
+
+    @media (max-width: 785px) {
+        &--heading {
+            margin-bottom: 0px;
+        }
+
+        &--hours {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+            h1 {
+                margin-bottom: 0px;                
+            }
+        }
+    }
+  }
+
+  // Set style for profile card
+  &.profile {
+    grid-column: 1/2;
+    grid-row: 1 / span all;
+
+    &__tag {
+      background-color: var(--blue-500);
+      padding: 1.5rem;
+
+      & img {
+        width: 50px;
+        border: 2px solid white;
+        border-radius: 50%;
+        margin-bottom: 2rem;
+      }
+
+      p {
+        font-size: 12px;
+      }
+
+      h1 {
+        color: var(--white);
+        font-weight: 300;
+      }
+
+      @media (max-width: 785px) {
+        & {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          
+          & img {
+              margin-right: 1rem;
+              margin-bottom: 0px;
+          }
+
+          h1 {
+              font-size: 1.5rem;
+          }
+        }
+      }
+    }
+    .card__content {
+      display: flex;
+      flex-direction: column;
+      padding: 0 1.5rem;
+
+      justify-content: center;
+      row-gap: 1rem;
+
+      @media (max-width: 785px) {
+          & {
+              flex-direction: row;
+              padding: 1.5rem;
+              justify-content: space-between;
+          }
+      }
+    }
+  }
+}

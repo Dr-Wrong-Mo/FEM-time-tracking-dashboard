@@ -1,0 +1,16 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  gap: 2rem;
+  margin: 2rem;
+}
+
+@media (max-width: 785px) {
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+    width: 90%;
+    
+  }
+}
+
