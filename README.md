@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/Dr-Wrong-Mo/FEM-time-tracking-dashboard](https://github.com/Dr-Wrong-Mo/FEM-time-tracking-dashboard)
-- Live Site URL: [https://dr-wrong-mo.github.io/FEM-time-tracking-dashboard](https://dr-wrong-mo.github.io/FEM-time-tracking-dashboard)
+- Live Site URL: [https://629c153ab6d18e65bad0051f--fem-time-tracking.netlify.app/](https://629c153ab6d18e65bad0051f--fem-time-tracking.netlify.app/)
 
 ## My process
 
