@@ -1,18 +1,18 @@
-[
+[  
   {
-    "title": "Work",
+    "title": "Social",
     "timeframes": {
       "daily": {
-        "current": 5,
-        "previous": 7
+        "current": 1,
+        "previous": 3
       },
       "weekly": {
-        "current": 32,
-        "previous": 36
+        "current": 5,
+        "previous": 10
       },
       "monthly": {
-        "current": 103,
-        "previous": 128
+        "current": 21,
+        "previous": 23
       }
     }
   },
@@ -68,19 +68,19 @@
     }
   },
   {
-    "title": "Social",
+    "title": "Work",
     "timeframes": {
       "daily": {
-        "current": 1,
-        "previous": 3
+        "current": 5,
+        "previous": 7
       },
       "weekly": {
-        "current": 5,
-        "previous": 10
+        "current": 32,
+        "previous": 36
       },
       "monthly": {
-        "current": 21,
-        "previous": 23
+        "current": 103,
+        "previous": 128
       }
     }
   },
