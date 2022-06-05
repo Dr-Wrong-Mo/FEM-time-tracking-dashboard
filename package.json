@@ -5,8 +5,7 @@
   "main": "webpack.config.js",
   "scripts": {
     "build": "webpack",
-    "dev": "webpack server",    
-    "deploy": "gh-pages -d dist"
+    "dev": "webpack server"
   },
   "devDependencies": {
     "@babel/core": "^7.17.8",
@@ -32,8 +31,5 @@
   "bugs": {
     "url": "https://github.com/Dr-Wrong-Mo/FEM-time-tracking-dashboard/issues"
   },
-  "homepage": "https://github.com/Dr-Wrong-Mo/FEM-time-tracking-dashboard#readme",
-  "dependencies": {
-    "gh-pages": "^4.0.0"
-  }
+  "homepage": "https://github.com/Dr-Wrong-Mo/FEM-time-tracking-dashboard#readme"
 }

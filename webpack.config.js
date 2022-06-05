@@ -8,7 +8,6 @@ module.exports = {
         bundle: path.resolve(__dirname, 'src/scripts/index.js'),
     },
     output:  {
-        publicPath: "/webpack-demo/",
         path: path.resolve(__dirname, 'dist'),
         filename: '[name][contenthash].js',
         clean: true,
