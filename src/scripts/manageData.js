@@ -22,11 +22,14 @@ function addListenerMulti(element, eventNames, listener) {
   eventNames.split(' ').forEach(e => element.addEventListener(e, listener, false));
 }
 
+// Apply listeners to ranges
+// Update all cards when a new range is selected
+// Update classes for ranges when a new range is selected
 ranges.forEach((el) => {
   addListenerMulti(el, 'click touchstart', (e) => {
-    range = e.originalTarget.innerHTML;
+    range = e.target.innerText;
     updateAllCards();
-    updateClassListForRanges(e.originalTarget)
+    updateClassListForRanges(e.target)
   })
 });
 
