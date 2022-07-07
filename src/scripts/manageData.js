@@ -1,4 +1,3 @@
-// import { link } from 'fs';
 import * as json from '../../data.json';
 const cards = document.querySelectorAll('.category');
 const ranges = document.querySelectorAll('.range');
@@ -89,4 +88,4 @@ function updateSingleCard(card, obj) {
 
 updateAllCards();
 
-export default importData;
+export default updateAllCards;

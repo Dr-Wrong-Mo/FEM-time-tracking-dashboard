@@ -1,4 +1,5 @@
 // Import Image Files
+import favicon from '../images/favicon-32x32.png';
 import profile from '../images/image-jeremy.png';
 import iconEllipsis from '../images/icon-ellipsis.svg';
 import iconExercise from '../images/icon-exercise.svg';

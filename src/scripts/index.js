@@ -5,5 +5,5 @@ import '../styles/main.scss'
 import './images'
 
 
-import importData from './manageData'
-importData()
+import updateAllCards from './manageData'
+updateAllCards()
