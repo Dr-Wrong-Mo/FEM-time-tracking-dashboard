@@ -16,13 +16,21 @@ for (let i = 0; i < data.length; i++) {
 let range = 'Daily';
 
 // Listen for change in range
+// Add multiple listeners (click or touchstart) to an element
+// https://stackoverflow.com/a/8797106/13604562
+function addListenerMulti(element, eventNames, listener) {
+  eventNames.split(' ').forEach(e => element.addEventListener(e, listener, false));
+}
+
 ranges.forEach((el) => {
-  el.addEventListener('click', (e) => {
+  addListenerMulti(el, 'click touchstart', (e) => {
     range = e.originalTarget.innerHTML;
     updateAllCards();
     updateClassListForRanges(e.originalTarget)
-  });
+  })
 });
+
+
 
 // Removes active class from previous selection and adds it to current selection
 function updateClassListForRanges (setRange) {
