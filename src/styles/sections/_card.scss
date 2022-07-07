@@ -17,6 +17,10 @@
 
     .range {
       transition: color 0.3s;
+      -webkit-user-select: none; /* Safari */
+      -moz-user-select: none; /* Firefox */
+      -ms-user-select: none; /* IE10+/Edge */
+      user-select: none; /* Standard */
     }
 
     .range:hover,
@@ -99,19 +103,19 @@
     }
 
     @media (max-width: 785px) {
-        &--heading {
-            margin-bottom: 0px;
-        }
+      &--heading {
+        margin-bottom: 0px;
+      }
 
-        &--hours {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            
-            h1 {
-                margin-bottom: 0px;                
-            }
+      &--hours {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h1 {
+          margin-bottom: 0px;
         }
+      }
     }
   }
 
@@ -145,14 +149,14 @@
           display: flex;
           flex-direction: row;
           align-items: center;
-          
+
           & img {
-              margin-right: 1rem;
-              margin-bottom: 0px;
+            margin-right: 1rem;
+            margin-bottom: 0px;
           }
 
           h1 {
-              font-size: 1.5rem;
+            font-size: 1.5rem;
           }
         }
       }
@@ -166,11 +170,11 @@
       row-gap: 1rem;
 
       @media (max-width: 785px) {
-          & {
-              flex-direction: row;
-              padding: 1.5rem;
-              justify-content: space-between;
-          }
+        & {
+          flex-direction: row;
+          padding: 1.5rem;
+          justify-content: space-between;
+        }
       }
     }
   }
